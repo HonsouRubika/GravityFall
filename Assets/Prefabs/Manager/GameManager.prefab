@@ -112,12 +112,13 @@ MonoBehaviour:
   _isOnPause: 1
   _playerOneSpawn: {fileID: 4937248486512512700}
   _playerTwoSpawn: {fileID: 8271114517614571490}
-  _obstaclesOneSpawn: {fileID: 6008726885008196636}
-  _obstaclesTwoSpawn: {fileID: 484806921854878844}
-  _despawnLine: {fileID: 2492909193530737110}
+  obstacleSpawnRate: 2
+  _spaceBetweenObstacles: 1
+  _patternOneSpawn: {fileID: 6008726885008196636}
+  _patternTwoSpawn: {fileID: 484806921854878844}
   _obstaclesPrefabs:
   - {fileID: 4173799710930703477, guid: d3b4eb40084657748a85e4d63e88280a, type: 3}
-  obstacleSpawnRate: 2
+  _despawnLine: {fileID: 2492909193530737110}
 --- !u!114 &61517261250745226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6787485013361141718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalPosition: {x: 16, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8204416938400384149}
@@ -228,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7518849255388707654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: -6.08, z: 0}
+  m_LocalPosition: {x: 16, y: -8.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8204416938400384149}
