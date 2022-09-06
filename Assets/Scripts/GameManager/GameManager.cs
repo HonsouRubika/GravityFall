@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    private int _nbOfPlayerInScene = 0;
-    public bool _isOnPause = true;
+    
 
     [Header("Player Spawns")]
     public Transform _playerOneSpawn;
     public Transform _playerTwoSpawn;
+    private int _nbOfPlayerInScene = 0;
 
     /* DEPRECIATED
     [Header("Obstacles")]
@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
     public Transform _despawnLine;
     private List<Pattern> _patterns;
 
+    [Header("Other")]
+    public bool _isOnPause = true;
+    public int _playersLifeActu;
+    public int _playersLifeStart = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +50,9 @@ public class GameManager : MonoBehaviour
 
         //init random seed based on actual time
         Random.InitState(System.DateTime.Now.Millisecond);
+
+        //reset players life count
+        _playersLifeActu = _playersLifeStart;
     }
 
     // Update is called once per frame
@@ -115,7 +123,7 @@ public class GameManager : MonoBehaviour
                             Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
                             break;
 
-                        //add other pattern type here
+                        //add other objects type here
                     }
                 }
             }
@@ -134,7 +142,7 @@ public class GameManager : MonoBehaviour
                             Instantiate(_obstaclesPrefabs[0], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
                             break;
 
-                            //add other pattern type here
+                            //add other objects type here
                     }
                 }
             }

@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     [Header("Player Settings")]
     public int _playerNumber = 0;
     public int _gravitySetting = 0; //down = 0, up = 1
+    public float _gravityUseCooldown = 2f;
+    private float _lastTimeGravityUsed;
 
 
     public enum JumpState
@@ -60,7 +62,7 @@ public class PlayerController : MonoBehaviour
         _bc = GetComponent<BoxCollider2D>();
 
         //init var
-        //_timeBeforeWallSlideStart = 0;
+        _lastTimeGravityUsed = Time.time - _gravityUseCooldown;
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -78,9 +80,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnGravityChange(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && Time.time >= _lastTimeGravityUsed + _gravityUseCooldown)
         {
             GravityChange();
+
+            //reset timer
+            _lastTimeGravityUsed = Time.time;
         }
     }
 
@@ -301,10 +306,24 @@ public class PlayerController : MonoBehaviour
                 {
                     //collided to obstacle
                     Debug.Log("touched obstacle");
+
+                    //TODO : Obstacles must depop
+
+                    PlayerGotHit();
                 }
             }
         }
 
+    }
+
+    private void PlayerGotHit()
+    {
+        //both player loose hp
+
+
+        //invicibility time
+
+        //players slows down
     }
 
     /*private void WallSlide()
