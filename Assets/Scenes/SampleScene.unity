@@ -468,6 +468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61517261250745226, guid: 9dab350ed84acf0429f9ec04a407af6e, type: 3}
+      propertyPath: m_MaxPlayerCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4937248486512512700, guid: 9dab350ed84acf0429f9ec04a407af6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

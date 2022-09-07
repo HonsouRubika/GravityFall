@@ -5,8 +5,8 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    private int _nbOfPlayerInScene = 0;
-    public bool _isOnPause = true;
+    //Singleton
+    public static GameManager Instance;
 
     [Header("Player Spawns")]
     public Transform _playerOneSpawn;
@@ -32,6 +32,37 @@ public class GameManager : MonoBehaviour
     public Transform _despawnLine;
     private List<Pattern> _patterns;
 
+    [Header("Other")]
+    public bool _isOnPause = true;
+    public int _playersLifeActu;
+    public int _playersLifeStart = 3;
+    public int _gravitySetting = 0; //down = 0, up = 1
+    public float _gravityUseCooldown = 2f;
+    public float _lastTimeGravityUsed;
+
+    //obstacles
+    public float _lastTimePlayerGotHit;
+    public float _obstacleSpeed = 5f;
+    public float _obstacleSpeedActu = 5f;
+    public float _obstacleSlowSpeed = 2f;
+    public float _speedComeBackRate = 10f;
+    public float _timeBeforeNormalObstacleSpeed = 2f;
+
+    void Awake()
+    {
+        #region Make Singleton
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        #endregion
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,11 +71,18 @@ public class GameManager : MonoBehaviour
 
         //intitilise dynamic array
         _patterns = new List<Pattern>();
+
         //add patterns in the pattern the dynamic array
         CreatePatterns();
 
         //init random seed based on actual time
         Random.InitState(System.DateTime.Now.Millisecond);
+
+        //reset players life count
+        _playersLifeActu = _playersLifeStart;
+
+        //init var
+        _lastTimeGravityUsed = Time.time - _gravityUseCooldown;
     }
 
     // Update is called once per frame
@@ -54,11 +92,14 @@ public class GameManager : MonoBehaviour
         {
             SpawnObstacles();
         }
+
+        //handles obstacle movement
+        ObstacleSpeedRate();
     }
 
     public void SpawnObstacles()
     {
-        if(Time.time > lastSpawnTime + obstacleSpawnRate)
+        if (Time.time > lastSpawnTime + obstacleSpawnRate + (obstacleSpawnRate * (_obstacleSpeed - _obstacleSpeedActu)))
         {
             //reset timer
             lastSpawnTime = Time.time;
@@ -77,6 +118,20 @@ public class GameManager : MonoBehaviour
             int selectedPattern = Random.Range(0, _patterns.Count);
             InstantiatePattern(_patterns[selectedPattern]);
 
+        }
+    }
+
+    public void ObstacleSpeedRate()
+    {
+        //slow then come slowly back to normal when player get's hit
+        if (_lastTimePlayerGotHit != 0 && Time.time < _lastTimePlayerGotHit + _timeBeforeNormalObstacleSpeed)
+        {
+            _obstacleSpeedActu = _obstacleSlowSpeed;
+        }
+        else if (_obstacleSpeedActu <_obstacleSpeed)
+        {
+            //slowly go back to normal
+            _obstacleSpeedActu += _speedComeBackRate * Time.deltaTime;
         }
     }
 
@@ -107,15 +162,15 @@ public class GameManager : MonoBehaviour
         {
             for (int j = 0; j < pattern._width; j++)
             {
-                if (pattern._obstacles[i, j] != (int) Pattern.ObstaclesType.empty)
+                if (pattern._obstacles[i, j] != (int)Pattern.ObstaclesType.empty)
                 {
-                    switch(pattern._obstacles[i, j])
+                    switch (pattern._obstacles[i, j])
                     {
                         case (int)Pattern.ObstaclesType.spike:
                             Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
                             break;
 
-                        //add other pattern type here
+                            //add other objects type here
                     }
                 }
             }
@@ -134,7 +189,7 @@ public class GameManager : MonoBehaviour
                             Instantiate(_obstaclesPrefabs[0], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
                             break;
 
-                            //add other pattern type here
+                            //add other objects type here
                     }
                 }
             }
@@ -149,22 +204,15 @@ public class GameManager : MonoBehaviour
         if (playerController != null)
         {
 
-            //put player to appropriate spawn
-            if (_nbOfPlayerInScene == 0)
-            {
-                playerInput.gameObject.transform.position = _playerOneSpawn.position;
-            }
-            else if (_nbOfPlayerInScene == 1)
-            {
-                playerController.SetPlayer2();
-                playerInput.gameObject.transform.position = _playerTwoSpawn.position;
-                
-                //start game
-                _isOnPause = false;
-            }
-        }
+            //TODO : spawn just one and place both pawn
 
-        _nbOfPlayerInScene++;
+            //put players to appropriate spawn
+            playerController._player1.transform.position = _playerOneSpawn.position;
+            playerController._player2.transform.position = _playerTwoSpawn.position;
+
+            //start game
+            _isOnPause = false;
+        }
     }
 
 
