@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -73,6 +74,10 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
             ComputeJumpP1();
+
+            if (GameManager.Instance._gameOver.active)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         }
     }
 
@@ -222,7 +227,7 @@ public class PlayerController : MonoBehaviour
                 if (obstacle)
                 {
                     //collided to obstacle
-
+                    Debug.Log("pls");
                     //Obstacles depop
                     Destroy(obstacle.collider.gameObject);
 
@@ -399,6 +404,8 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerGotHit()
     {
+        Debug.Log("player got hit");
+
         if (Time.time >= _timeInvulnerabilityBegin + _invulnerabilityDuration)
         {
             //both player loose hp

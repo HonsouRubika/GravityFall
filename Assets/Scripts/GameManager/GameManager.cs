@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
     public float _speedComeBackRate = 10f;
     public float _timeBeforeNormalObstacleSpeed = 2f;
 
+    //UI
+    public GameObject _pause;
+    public GameObject _inGame;
+    public GameObject _gameOver;
+
     [Header("Background Settings")]
     //ignore last layer (doesnt move, nor get's replaced)
     //1st layer
@@ -130,6 +135,17 @@ public class GameManager : MonoBehaviour
         if (!_isOnPause)
         {
             SpawnObstacles();
+            _pause.SetActive(false);
+        }
+        else
+        {
+            _pause.SetActive(true);
+        }
+
+        //hp
+        if(_playersLifeActu <= 0)
+        {
+            _gameOver.SetActive(true);
         }
 
         //handles obstacle movement
