@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5423991830666144744}
   - component: {fileID: 6874277732270190070}
   - component: {fileID: 750784327721855437}
+  - component: {fileID: 2679651626419521023}
   m_Layer: 7
   m_Name: Anim_Flaque_Radioactive_0
   m_TagString: Untagged
@@ -139,3 +140,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!61 &2679651626419521023
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423991830666144745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.53, y: 1.5330713}
+    newSize: {x: 2.53, y: 1.5330713}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.53, y: 1.5330713}
+  m_EdgeRadius: 0

@@ -86,6 +86,9 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
             ComputeJumpP2();
+
+            if (GameManager.Instance._gameOver.active)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -104,6 +107,9 @@ public class PlayerController : MonoBehaviour
 
             //reset timer
             GameManager.Instance._lastTimeGravityUsed = Time.time;
+
+            if (GameManager.Instance._gameOver.active)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

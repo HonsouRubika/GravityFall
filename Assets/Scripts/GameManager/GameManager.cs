@@ -353,6 +353,20 @@ public class GameManager : MonoBehaviour
         p2.AddObstacle(2, 0, Pattern.ObstaclesType.elecCables);
         p2.AddObstacle(5, 0, Pattern.ObstaclesType.elecCables);
 
+        Pattern p3 = new Pattern(10, 5);
+        p3.AddObstacle(2, 3, Pattern.ObstaclesType.elecCables);
+        p3.AddObstacle(5, 3, Pattern.ObstaclesType.elecCables);
+        p3.AddObstacle(7, 3, Pattern.ObstaclesType.elecCables);
+        _patterns.Add(p3);
+
+        Pattern p4 = new Pattern(10, 5);
+        p4.AddObstacle(4, 1, Pattern.ObstaclesType.elecCables);
+        p4.AddObstacle(6, 3, Pattern.ObstaclesType.elecCables);
+        p4.AddObstacle(1, 0, Pattern.ObstaclesType.elecCables);
+        _patterns.Add(p4);
+
+        //p3.AddObstacle(3, 0)
+
     }
 
     public void InstantiatePattern(Pattern pattern)
