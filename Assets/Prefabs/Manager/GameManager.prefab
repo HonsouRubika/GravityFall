@@ -125,17 +125,40 @@ MonoBehaviour:
   _gravityUseCooldown: 2
   _lastTimeGravityUsed: 0
   _lastTimePlayerGotHit: 0
-  _obstacleSpeed: 5
+  _obstacleSpeed: 10
   _obstacleSpeedActu: 5
   _obstacleSlowSpeed: 2
   _speedComeBackRate: 10
   _timeBeforeNormalObstacleSpeed: 2
   _background1Prefab: {fileID: 3821240643677432849, guid: 8028a040da5663141ad2d404e038020d, type: 3}
-  _backgrounds1: []
-  _background1SpeedActu: 1
+  _backgrounds1:
+  - {fileID: 0}
   _background2Prefab: {fileID: 3821240643677432849, guid: c78af5be741fa8f4ab92da0177243d3d, type: 3}
-  _backgrounds2: []
-  _background2SpeedActu: 3
+  _backgrounds2:
+  - {fileID: 0}
+  _background3Prefab: {fileID: 3821240643677432849, guid: f3204bc0ff64be947b403c05107eb521, type: 3}
+  _backgrounds3:
+  - {fileID: 0}
+  _background4Prefab: {fileID: 3821240643677432849, guid: bbb3dbebb64a8384bb578d56debd4c2d, type: 3}
+  _backgrounds4:
+  - {fileID: 0}
+  _background5Prefab: {fileID: 3821240643677432849, guid: 2732c5c774a69004e9144d2b19239d9d, type: 3}
+  _backgrounds5:
+  - {fileID: 0}
+  _background6Prefab: {fileID: 3821240643677432849, guid: 59c9d532968c59d4ea47e0fd1d4e2a0b, type: 3}
+  _backgrounds6:
+  - {fileID: 0}
+  _background7Prefab: {fileID: 3821240643677432849, guid: 07c20cf1c7f9d20409c13b9d5bb7bca7, type: 3}
+  _backgrounds7:
+  - {fileID: 0}
+  _botBackground1Prefab: {fileID: 4726049194261673554, guid: 5329de82df19b00428e5d1bc32171815, type: 3}
+  _botBackgrounds1: []
+  _botBackground2Prefab: {fileID: 4726049194261673554, guid: efeabb431116b4d4589f3f81a6d58e08, type: 3}
+  _botBackgrounds2: []
+  _botBackground3Prefab: {fileID: 4726049194261673554, guid: 12e675fae81da4846a66699d01c9d92e, type: 3}
+  _botBackgrounds3: []
+  _botBackground4Prefab: {fileID: 4726049194261673554, guid: 888b9a769efacc0429b99369dab4f90c, type: 3}
+  _botBackgrounds4: []
 --- !u!114 &61517261250745226
 MonoBehaviour:
   m_ObjectHideFlags: 0

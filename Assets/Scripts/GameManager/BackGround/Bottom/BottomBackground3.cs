@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGround7 : MonoBehaviour
+public class BottomBackground3 : MonoBehaviour
 {
 
     public Transform _despawnLine;
@@ -15,20 +15,19 @@ public class BackGround7 : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (7f / 7f), 0);
+        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (3f / 4f), 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!GameManager.Instance._isOnPause)
+        if (!GameManager.Instance._isOnPause)
             Move();
 
         //spawn new bg
         if (!_didSpawnNextBg && _rightSide.position.x <= _spawnLine.position.x)
         {
-            Debug.Log("oui");
-            GameManager.Instance.SpawnBackground7();
+            GameManager.Instance.SpawnBotBackground3();
             _didSpawnNextBg = true;
         }
 
@@ -41,6 +40,6 @@ public class BackGround7 : MonoBehaviour
 
     public void Move()
     {
-        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (7f / 7f), 0);
+        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (3f / 4f), 0);
     }
 }

@@ -27,7 +27,6 @@ public class BackGround1 : MonoBehaviour
         //spawn new bg
         if (!_didSpawnNextBg && _rightSide.position.x <= _spawnLine.position.x)
         {
-            Debug.Log("oui");
             GameManager.Instance.SpawnBackground1();
             _didSpawnNextBg = true;
         }

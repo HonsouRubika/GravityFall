@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGround3 : MonoBehaviour
+public class BackGround5 : MonoBehaviour
 {
 
     public Transform _despawnLine;
@@ -15,7 +15,7 @@ public class BackGround3 : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (3f / 7f), 0);
+        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (5f / 7f), 0);
     }
 
     // Update is called once per frame
@@ -27,8 +27,7 @@ public class BackGround3 : MonoBehaviour
         //spawn new bg
         if (!_didSpawnNextBg && _rightSide.position.x <= _spawnLine.position.x)
         {
-            Debug.Log("oui");
-            GameManager.Instance.SpawnBackground3();
+            GameManager.Instance.SpawnBackground5();
             _didSpawnNextBg = true;
         }
 
@@ -41,6 +40,6 @@ public class BackGround3 : MonoBehaviour
 
     public void Move()
     {
-        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (3f / 7f), 0);
+        _rb.velocity = new Vector2((float)-GameManager.Instance._obstacleSpeedActu * (5f / 7f), 0);
     }
 }

@@ -51,8 +51,8 @@ MonoBehaviour:
   _ratioAddForce: 1
   _jumpSpeed: 10
   _jumpAirIntake: 5
-  _jumpFallSpeed: 10
-  _maxFallSpeed: 10
+  _jumpFallSpeed: 20
+  _maxFallSpeed: 20
   _groundPositionP1: {fileID: 2248702464612389760}
   _leftEdgeP1: {fileID: 6837084072560132883}
   _rightEdgeP1: {fileID: 1583941327440818973}
@@ -67,7 +67,7 @@ MonoBehaviour:
   _player1: {fileID: 1304582729024087653}
   _player2: {fileID: 2536659586664628661}
   _playerNumber: 0
-  _invulnerabilityDuration: 2
+  _invulnerabilityDuration: 1
 --- !u!114 &1814108935055432488
 MonoBehaviour:
   m_ObjectHideFlags: 0
