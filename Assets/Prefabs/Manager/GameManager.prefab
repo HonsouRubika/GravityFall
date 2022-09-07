@@ -86,7 +86,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6128607878746968195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9450094, y: -1.1508137, z: -3.3703356}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4937248486512512700}
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c889a72262ccba346b30afc18cca0492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isOnPause: 1
   _playerOneSpawn: {fileID: 4937248486512512700}
   _playerTwoSpawn: {fileID: 8271114517614571490}
   obstacleSpawnRate: 2
@@ -119,6 +118,24 @@ MonoBehaviour:
   _obstaclesPrefabs:
   - {fileID: 4173799710930703477, guid: d3b4eb40084657748a85e4d63e88280a, type: 3}
   _despawnLine: {fileID: 2492909193530737110}
+  _isOnPause: 1
+  _playersLifeActu: 0
+  _playersLifeStart: 3
+  _gravitySetting: 0
+  _gravityUseCooldown: 2
+  _lastTimeGravityUsed: 0
+  _lastTimePlayerGotHit: 0
+  _obstacleSpeed: 5
+  _obstacleSpeedActu: 5
+  _obstacleSlowSpeed: 2
+  _speedComeBackRate: 10
+  _timeBeforeNormalObstacleSpeed: 2
+  _background1Prefab: {fileID: 3821240643677432849, guid: 8028a040da5663141ad2d404e038020d, type: 3}
+  _backgrounds1: []
+  _background1SpeedActu: 1
+  _background2Prefab: {fileID: 3821240643677432849, guid: c78af5be741fa8f4ab92da0177243d3d, type: 3}
+  _backgrounds2: []
+  _background2SpeedActu: 3
 --- !u!114 &61517261250745226
 MonoBehaviour:
   m_ObjectHideFlags: 0

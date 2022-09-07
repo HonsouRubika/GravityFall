@@ -48,6 +48,30 @@ public class GameManager : MonoBehaviour
     public float _speedComeBackRate = 10f;
     public float _timeBeforeNormalObstacleSpeed = 2f;
 
+    [Header("Background Settings")]
+    //ignore last layer (doesnt move, nor get's replaced)
+    //1st layer
+    public GameObject _background1Prefab;
+    public List<GameObject> _backgrounds1;
+    //2nd layer
+    public GameObject _background2Prefab;
+    public List<GameObject> _backgrounds2;
+    //3rd layer
+    public GameObject _background3Prefab;
+    public List<GameObject> _backgrounds3;
+    //4 layer
+    public GameObject _background4Prefab;
+    public List<GameObject> _backgrounds4;
+    //5 layer
+    public GameObject _background5Prefab;
+    public List<GameObject> _backgrounds5;
+    //6layer
+    public GameObject _background6Prefab;
+    public List<GameObject> _backgrounds6;
+    //7 layer
+    public GameObject _background7Prefab;
+    public List<GameObject> _backgrounds7;
+
     void Awake()
     {
         #region Make Singleton
@@ -71,6 +95,7 @@ public class GameManager : MonoBehaviour
 
         //intitilise dynamic array
         _patterns = new List<Pattern>();
+        //_backgrounds1 = new List<GameObject>();
 
         //add patterns in the pattern the dynamic array
         CreatePatterns();
@@ -95,6 +120,83 @@ public class GameManager : MonoBehaviour
 
         //handles obstacle movement
         ObstacleSpeedRate();
+    }
+
+    public void SpawnBackground1()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background1Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds1.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds1[_backgrounds1.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground2()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background2Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds2.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds2[_backgrounds2.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground3()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background3Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds3.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds3[_backgrounds3.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground4()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background4Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds4.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds4[_backgrounds4.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground5()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background5Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds5.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds5[_backgrounds5.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground6()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background6Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds6.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds6[_backgrounds6.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
+    }
+
+    public void SpawnBackground7()
+    {
+        //pop new background
+        GameObject newBg = Instantiate(_background7Prefab, new Vector3(_patternOneSpawn.position.x + 50, 1, 0), Quaternion.identity);
+        newBg.GetComponent<BackGround1>()._despawnLine = _despawnLine;
+        newBg.GetComponent<BackGround1>()._spawnLine = _patternOneSpawn;
+        _backgrounds7.Add(newBg);
+
+        newBg.transform.position = new Vector3(_backgrounds7[_backgrounds7.Count - 2].transform.position.x + newBg.GetComponent<SpriteRenderer>().bounds.size.x, newBg.transform.position.y, newBg.transform.position.z);
     }
 
     public void SpawnObstacles()
@@ -128,7 +230,7 @@ public class GameManager : MonoBehaviour
         {
             _obstacleSpeedActu = _obstacleSlowSpeed;
         }
-        else if (_obstacleSpeedActu <_obstacleSpeed)
+        else if (_obstacleSpeedActu < _obstacleSpeed)
         {
             //slowly go back to normal
             _obstacleSpeedActu += _speedComeBackRate * Time.deltaTime;
@@ -167,7 +269,8 @@ public class GameManager : MonoBehaviour
                     switch (pattern._obstacles[i, j])
                     {
                         case (int)Pattern.ObstaclesType.spike:
-                            Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            obst.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
                             //add other objects type here
@@ -186,7 +289,8 @@ public class GameManager : MonoBehaviour
                     switch (pattern._obstacles[i, j])
                     {
                         case (int)Pattern.ObstaclesType.spike:
-                            Instantiate(_obstaclesPrefabs[0], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            obst.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
                             //add other objects type here
