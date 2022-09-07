@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 1738cfbd683190344a513fc340458d69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8776450195459617685
+    second: Anim_Transition_Bouche_2_0
+  - first:
+      213: 446601437504050660
+    second: Anim_Transition_Bouche_2_1
+  - first:
+      213: -3542285607929798195
+    second: Anim_Transition_Bouche_2_2
+  - first:
+      213: 8383227840102856582
+    second: Anim_Transition_Bouche_2_3
+  - first:
+      213: -6586100836195018233
+    second: Anim_Transition_Bouche_2_4
+  - first:
+      213: -7423886153493964351
+    second: Anim_Transition_Bouche_2_5
+  - first:
+      213: 7448440109564199082
+    second: Anim_Transition_Bouche_2_6
+  - first:
+      213: 500764575276537014
+    second: Anim_Transition_Bouche_2_7
+  - first:
+      213: 7926343361556870993
+    second: Anim_Transition_Bouche_2_8
+  - first:
+      213: -7137483676515300988
+    second: Anim_Transition_Bouche_2_9
+  - first:
+      213: -5778009386689583825
+    second: Anim_Transition_Bouche_2_10
+  - first:
+      213: 2207363130407913034
+    second: Anim_Transition_Bouche_2_11
+  - first:
+      213: 7946588925356702855
+    second: Anim_Transition_Bouche_2_12
+  - first:
+      213: 4457896516864070334
+    second: Anim_Transition_Bouche_2_13
+  - first:
+      213: -1777892606951391918
+    second: Anim_Transition_Bouche_2_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cc8befb09c33680800000000000000
+      internalID: -8776450195459617685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e59b9624a5a23600800000000000000
+      internalID: 446601437504050660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_2
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ad56e10647dec0800000000000000
+      internalID: -3542285607929798195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_3
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687fe78ed45375470800000000000000
+      internalID: 8383227840102856582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_4
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a51b32f287994a0800000000000000
+      internalID: -6586100836195018233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_5
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c91d0870ee09f890800000000000000
+      internalID: -7423886153493964351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_6
+      rect:
+        serializedVersion: 2
+        x: 4002
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0885de0dc2e5760800000000000000
+      internalID: 7448440109564199082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_7
+      rect:
+        serializedVersion: 2
+        x: 4669
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b415716ab213f600800000000000000
+      internalID: 500764575276537014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_8
+      rect:
+        serializedVersion: 2
+        x: 5336
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1577f51ba47000e60800000000000000
+      internalID: 7926343361556870993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_9
+      rect:
+        serializedVersion: 2
+        x: 6003
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4890827896092fc90800000000000000
+      internalID: -7137483676515300988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_10
+      rect:
+        serializedVersion: 2
+        x: 6670
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25ae75731360dfa0800000000000000
+      internalID: -5778009386689583825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_11
+      rect:
+        serializedVersion: 2
+        x: 7337
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46024e621122ae10800000000000000
+      internalID: 2207363130407913034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_12
+      rect:
+        serializedVersion: 2
+        x: 8004
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c70f75684f74e60800000000000000
+      internalID: 7946588925356702855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_13
+      rect:
+        serializedVersion: 2
+        x: 8671
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2522d5341addd30800000000000000
+      internalID: 4457896516864070334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Transition_Bouche_2_14
+      rect:
+        serializedVersion: 2
+        x: 9338
+        y: 0
+        width: 667
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d7ed9f718a357e0800000000000000
+      internalID: -1777892606951391918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
