@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: d4aa996dbdf1ca24d8b020ada7121b9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 784237968444360340
+    second: Anim_Jeyser_0
+  - first:
+      213: 6059055515650531508
+    second: Anim_Jeyser_1
+  - first:
+      213: 8333829334110676902
+    second: Anim_Jeyser_2
+  - first:
+      213: 3537331362860970654
+    second: Anim_Jeyser_3
+  - first:
+      213: 8484582922376345073
+    second: Anim_Jeyser_4
+  - first:
+      213: 2781974850203311478
+    second: Anim_Jeyser_5
+  - first:
+      213: -8652734744901393024
+    second: Anim_Jeyser_6
+  - first:
+      213: 1955801054676036654
+    second: Anim_Jeyser_7
+  - first:
+      213: -5050815867484573338
+    second: Anim_Jeyser_8
+  - first:
+      213: -6480286833392847468
+    second: Anim_Jeyser_9
+  - first:
+      213: -1063222447312835945
+    second: Anim_Jeyser_10
+  - first:
+      213: -6738892082125352158
+    second: Anim_Jeyser_11
+  - first:
+      213: -1524826213864198083
+    second: Anim_Jeyser_12
+  - first:
+      213: -2493420711119385620
+    second: Anim_Jeyser_13
+  - first:
+      213: 8372869841678181282
+    second: Anim_Jeyser_14
+  - first:
+      213: 8552161783387614328
+    second: Anim_Jeyser_15
+  - first:
+      213: -727715329712646908
+    second: Anim_Jeyser_16
+  - first:
+      213: 7566104401975351287
+    second: Anim_Jeyser_17
+  - first:
+      213: -3292490906608567969
+    second: Anim_Jeyser_18
+  - first:
+      213: 1310771141427952297
+    second: Anim_Jeyser_19
+  - first:
+      213: 9143508708419228434
+    second: Anim_Jeyser_20
+  - first:
+      213: 394576907264258368
+    second: Anim_Jeyser_21
+  - first:
+      213: -997675672049724557
+    second: Anim_Jeyser_22
+  - first:
+      213: -6455355804071752647
+    second: Anim_Jeyser_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Jeyser_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4960088f64c22ea00800000000000000
+      internalID: 784237968444360340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_1
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0a8b4a3e6161450800000000000000
+      internalID: 6059055515650531508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_2
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7a566ff95b7a370800000000000000
+      internalID: 8333829334110676902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_3
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e923d280220271130800000000000000
+      internalID: 3537331362860970654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_4
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f57693f63b4fb570800000000000000
+      internalID: 8484582922376345073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_5
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d5070036f8b9620800000000000000
+      internalID: 2781974850203311478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_6
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085e87af79f4be780800000000000000
+      internalID: -8652734744901393024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_7
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cac4b62b6642b10800000000000000
+      internalID: 1955801054676036654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_8
+      rect:
+        serializedVersion: 2
+        x: 4024
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661fca89ab5e7e9b0800000000000000
+      internalID: -5050815867484573338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_9
+      rect:
+        serializedVersion: 2
+        x: 4527
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4957af485756116a0800000000000000
+      internalID: -6480286833392847468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_10
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a62be31dcae31f0800000000000000
+      internalID: -1063222447312835945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_11
+      rect:
+        serializedVersion: 2
+        x: 5533
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223d9310b55aa72a0800000000000000
+      internalID: -6738892082125352158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_12
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30bb6a23aab6dae0800000000000000
+      internalID: -1524826213864198083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_13
+      rect:
+        serializedVersion: 2
+        x: 6539
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb802ee217956dd0800000000000000
+      internalID: -2493420711119385620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_14
+      rect:
+        serializedVersion: 2
+        x: 7042
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a32fc772c8623470800000000000000
+      internalID: 8372869841678181282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_15
+      rect:
+        serializedVersion: 2
+        x: 7545
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c6d78a4d16fa670800000000000000
+      internalID: 8552161783387614328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_16
+      rect:
+        serializedVersion: 2
+        x: 8048
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4051fd263c2a6e5f0800000000000000
+      internalID: -727715329712646908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_17
+      rect:
+        serializedVersion: 2
+        x: 8551
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7924dddd3300960800000000000000
+      internalID: 7566104401975351287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_18
+      rect:
+        serializedVersion: 2
+        x: 9054
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59746df6f8be42d0800000000000000
+      internalID: -3292490906608567969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_19
+      rect:
+        serializedVersion: 2
+        x: 9557
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa75aa886bc03210800000000000000
+      internalID: 1310771141427952297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_20
+      rect:
+        serializedVersion: 2
+        x: 10060
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213d406d9b444ee70800000000000000
+      internalID: 9143508708419228434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_21
+      rect:
+        serializedVersion: 2
+        x: 10563
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041fe0a4b91d97500800000000000000
+      internalID: 394576907264258368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_22
+      rect:
+        serializedVersion: 2
+        x: 11066
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3735d6e134b8722f0800000000000000
+      internalID: -997675672049724557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Jeyser_23
+      rect:
+        serializedVersion: 2
+        x: 11569
+        y: 0
+        width: 503
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c0c8f1918f966a0800000000000000
+      internalID: -6455355804071752647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
