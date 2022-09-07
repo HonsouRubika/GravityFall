@@ -130,6 +130,10 @@ public class PlayerController : MonoBehaviour
         if (_rbP2.gravityScale == 1) _rbP2.gravityScale = -1;
         else _rbP2.gravityScale = 1;
 
+        //flip on Y axes
+        _player1.transform.localScale = new Vector3(_player1.transform.localScale.x, -_player1.transform.localScale.y, _player1.transform.localScale.z);
+        _player2.transform.localScale = new Vector3(_player2.transform.localScale.x, -_player2.transform.localScale.y, _player2.transform.localScale.z);
+
 
         //change gravity p1
         if (GameManager.Instance._gravitySetting == 0)

@@ -299,17 +299,43 @@ public class GameManager : MonoBehaviour
     {
         //pattern example
         //see explanation in "Pattern" script
+        /*
         Pattern example = new Pattern(10, 5);
 
-        example.AddObstacle(2, 1, Pattern.ObstaclesType.spike);
-        example.AddObstacle(3, 2, Pattern.ObstaclesType.spike);
-        example.AddObstacle(6, 2, Pattern.ObstaclesType.spike);
-        example.AddObstacle(7, 3, Pattern.ObstaclesType.spike);
+        example.AddObstacle(2, 1, Pattern.ObstaclesType.babredWires);
+        example.AddObstacle(3, 2, Pattern.ObstaclesType.babredWires);
+        example.AddObstacle(6, 2, Pattern.ObstaclesType.babredWires);
+        example.AddObstacle(7, 3, Pattern.ObstaclesType.babredWires);
         _patterns.Add(example);
 
 
         //write your other pattern here
         //...
+        Pattern pat1 = new Pattern(10, 5);
+        pat1.AddObstacle(1, 0, Pattern.ObstaclesType.elecCables);
+        pat1.AddObstacle(7, 3, Pattern.ObstaclesType.elecCables);
+        pat1.AddObstacle(4, 1, Pattern.ObstaclesType.elecCables);
+        _patterns.Add(pat1);
+
+
+        Pattern pat2 = new Pattern(10, 5);
+        pat2.AddObstacle(2, 0, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(3, 0, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(6, 1, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(4, 3, Pattern.ObstaclesType.elecCables);
+        _patterns.Add(pat2);
+        */
+
+        Pattern p1 = new Pattern(10, 5);
+        p1.AddObstacle(3, 0, Pattern.ObstaclesType.elecCables);
+        p1.AddObstacle(4, 0, Pattern.ObstaclesType.elecCables);
+        p1.AddObstacle(6, 0, Pattern.ObstaclesType.elecCables);
+        _patterns.Add(p1);
+
+
+        Pattern p2 = new Pattern(10, 5);
+        p2.AddObstacle(2, 0, Pattern.ObstaclesType.elecCables);
+        p2.AddObstacle(5, 0, Pattern.ObstaclesType.elecCables);
 
     }
 
@@ -326,12 +352,17 @@ public class GameManager : MonoBehaviour
                 {
                     switch (pattern._obstacles[i, j])
                     {
-                        case (int)Pattern.ObstaclesType.spike:
+                        case 1:
                             GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
                             obst.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
-                            //add other objects type here
+                        //add other objects type here
+                        case 2:
+                            GameObject obst2 = Instantiate(_obstaclesPrefabs[1], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            obst2.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+
                     }
                 }
             }
@@ -346,12 +377,16 @@ public class GameManager : MonoBehaviour
                 {
                     switch (pattern._obstacles[i, j])
                     {
-                        case (int)Pattern.ObstaclesType.spike:
-                            GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
-                            obst.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+
+                        case 1:
+                            GameObject obst3 = Instantiate(_obstaclesPrefabs[2], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
-                            //add other objects type here
+                        case 2:
+                            GameObject obst4 = Instantiate(_obstaclesPrefabs[3], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            obst4.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
                     }
                 }
             }
