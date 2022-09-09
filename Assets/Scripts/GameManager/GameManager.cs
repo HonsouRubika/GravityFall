@@ -143,13 +143,16 @@ public class GameManager : MonoBehaviour
         }
 
         //hp
-        if(_playersLifeActu <= 0)
+        if (_playersLifeActu <= 0)
         {
             _gameOver.SetActive(true);
+            _obstacleSpeedActu = 0;
         }
-
-        //handles obstacle movement
-        ObstacleSpeedRate();
+        else
+        {
+            //handles obstacle movement
+            ObstacleSpeedRate();
+        }
     }
 
     public void SpawnBackground1()
@@ -291,8 +294,14 @@ public class GameManager : MonoBehaviour
             */
 
             //procedural generation of pattern
-            int selectedPattern = Random.Range(0, _patterns.Count);
-            InstantiatePattern(_patterns[selectedPattern]);
+            int selectedPattern1 = Random.Range(0, _patterns.Count);
+            int selectedPattern2 = Random.Range(0, _patterns.Count);
+            while (selectedPattern1 == selectedPattern2)
+            {
+                selectedPattern2 = Random.Range(0, _patterns.Count);
+            }
+
+            InstantiatePattern(_patterns[selectedPattern1], _patterns[selectedPattern2]);
 
         }
     }
@@ -343,15 +352,15 @@ public class GameManager : MonoBehaviour
         */
 
         Pattern p1 = new Pattern(10, 5);
-        p1.AddObstacle(3, 0, Pattern.ObstaclesType.elecCables);
-        p1.AddObstacle(4, 0, Pattern.ObstaclesType.elecCables);
-        p1.AddObstacle(6, 0, Pattern.ObstaclesType.elecCables);
+        p1.AddObstacle(3, 3, Pattern.ObstaclesType.elecCables);
+        p1.AddObstacle(4, 3, Pattern.ObstaclesType.elecCables);
+        p1.AddObstacle(6, 3, Pattern.ObstaclesType.elecCables);
         _patterns.Add(p1);
 
 
         Pattern p2 = new Pattern(10, 5);
-        p2.AddObstacle(2, 0, Pattern.ObstaclesType.elecCables);
-        p2.AddObstacle(5, 0, Pattern.ObstaclesType.elecCables);
+        p2.AddObstacle(2, 3, Pattern.ObstaclesType.elecCables);
+        p2.AddObstacle(5, 3, Pattern.ObstaclesType.elecCables);
 
         Pattern p3 = new Pattern(10, 5);
         p3.AddObstacle(2, 3, Pattern.ObstaclesType.elecCables);
@@ -360,27 +369,27 @@ public class GameManager : MonoBehaviour
         _patterns.Add(p3);
 
         Pattern p4 = new Pattern(10, 5);
-        p4.AddObstacle(4, 1, Pattern.ObstaclesType.elecCables);
+        p4.AddObstacle(4, 3, Pattern.ObstaclesType.elecCables);
         p4.AddObstacle(6, 3, Pattern.ObstaclesType.elecCables);
-        p4.AddObstacle(1, 0, Pattern.ObstaclesType.elecCables);
+        p4.AddObstacle(1, 3, Pattern.ObstaclesType.elecCables);
         _patterns.Add(p4);
 
         //p3.AddObstacle(3, 0)
 
     }
 
-    public void InstantiatePattern(Pattern pattern)
+    public void InstantiatePattern(Pattern p1, Pattern p2)
     {
         //same pattern for p1 and p2
 
         //for p1
-        for (int i = 0; i < pattern._length; i++)
+        for (int i = 0; i < p1._length; i++)
         {
-            for (int j = 0; j < pattern._width; j++)
+            for (int j = 0; j < p1._width; j++)
             {
-                if (pattern._obstacles[i, j] != (int)Pattern.ObstaclesType.empty)
+                if (p1._obstacles[i, j] != (int)Pattern.ObstaclesType.empty)
                 {
-                    switch (pattern._obstacles[i, j])
+                    switch (p1._obstacles[i, j])
                     {
                         case 1:
                             GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
@@ -399,13 +408,13 @@ public class GameManager : MonoBehaviour
         }
 
         //for p2
-        for (int i = 0; i < pattern._length; i++)
+        for (int i = 0; i < p2._length; i++)
         {
-            for (int j = 0; j < pattern._width; j++)
+            for (int j = 0; j < p2._width; j++)
             {
-                if (pattern._obstacles[i, j] != (int)Pattern.ObstaclesType.empty)
+                if (p2._obstacles[i, j] != (int)Pattern.ObstaclesType.empty)
                 {
-                    switch (pattern._obstacles[i, j])
+                    switch (p2._obstacles[i, j])
                     {
 
                         case 1:

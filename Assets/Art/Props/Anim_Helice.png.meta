@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 166298aa58dfeb54c9b12b3046f3ad63
+guid: d741e653d4c8c1443a61316121dd6633
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8758367197422671274
-    second: Anim_Bouche_qui_Pend_0
+      213: -8404132411636950901
+    second: Anim_Helice_0
   - first:
-      213: 3282038224869395900
-    second: Anim_Bouche_qui_Pend_1
+      213: 4619866372747578498
+    second: Anim_Helice_1
   - first:
-      213: 2522491884685476509
-    second: Anim_Bouche_qui_Pend_2
+      213: -7684482458160051196
+    second: Anim_Helice_2
   - first:
-      213: 7085462644021423836
-    second: Anim_Bouche_qui_Pend_3
+      213: -5313364709577040807
+    second: Anim_Helice_3
   - first:
-      213: 6215626605576277281
-    second: Anim_Bouche_qui_Pend_4
-  - first:
-      213: 1250047056916334036
-    second: Anim_Bouche_qui_Pend_5
+      213: -3237004473523813053
+    second: Anim_Helice_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,127 +106,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_0
+      name: Anim_Helice_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5dfceef88fb8970800000000000000
-      internalID: 8758367197422671274
+      spriteID: b88580f39168e5b80800000000000000
+      internalID: -8404132411636950901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_1
+      name: Anim_Helice_1
       rect:
         serializedVersion: 2
-        x: 667
+        x: 175
         y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd089460642c8d20800000000000000
-      internalID: 3282038224869395900
+      spriteID: 28c44692dff0d1040800000000000000
+      internalID: 4619866372747578498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_2
+      name: Anim_Helice_2
       rect:
         serializedVersion: 2
-        x: 1334
+        x: 350
         y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d92cb7f1101b10320800000000000000
-      internalID: 2522491884685476509
+      spriteID: 40c46ae1beb3b5590800000000000000
+      internalID: -7684482458160051196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_3
+      name: Anim_Helice_3
       rect:
         serializedVersion: 2
-        x: 2001
+        x: 525
         y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cde623efbbe945260800000000000000
-      internalID: 7085462644021423836
+      spriteID: 95c5093b2f22346b0800000000000000
+      internalID: -5313364709577040807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_4
+      name: Anim_Helice_4
       rect:
         serializedVersion: 2
-        x: 2668
+        x: 700
         y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 175
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d47d94777524650800000000000000
-      internalID: 6215626605576277281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Bouche_qui_Pend_5
-      rect:
-        serializedVersion: 2
-        x: 3335
-        y: 0
-        width: 667
-        height: 546
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d5450cdc2f095110800000000000000
-      internalID: 1250047056916334036
+      spriteID: 345434be499d313d0800000000000000
+      internalID: -3237004473523813053
       vertices: []
       indices: 
       edges: []

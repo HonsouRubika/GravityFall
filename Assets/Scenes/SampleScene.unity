@@ -441,6 +441,10 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3409585924748509586, guid: 12e675fae81da4846a66699d01c9d92e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4726049194261673554, guid: 12e675fae81da4846a66699d01c9d92e, type: 3}
       propertyPath: m_Name
       value: BotBackground3
@@ -841,6 +845,10 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3409585924748509586, guid: 888b9a769efacc0429b99369dab4f90c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4726049194261673554, guid: 888b9a769efacc0429b99369dab4f90c, type: 3}
       propertyPath: m_Name
       value: BotBackground4
@@ -894,7 +902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3821240643677432851, guid: 8028a040da5663141ad2d404e038020d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3821240643677432851, guid: 8028a040da5663141ad2d404e038020d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1311,6 +1319,10 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3409585924748509586, guid: efeabb431116b4d4589f3f81a6d58e08, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4726049194261673554, guid: efeabb431116b4d4589f3f81a6d58e08, type: 3}
       propertyPath: m_Name
       value: BotBackground2
@@ -1394,7 +1406,7 @@ Transform:
   - {fileID: 148984170}
   - {fileID: 41237061}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444854846 stripped
 GameObject:
@@ -1924,7 +1936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3821240643677432851, guid: 3a4ef31cab34cc54b84716d4847be263, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3821240643677432851, guid: 3a4ef31cab34cc54b84716d4847be263, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2097,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8204416938400384149, guid: 9dab350ed84acf0429f9ec04a407af6e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8204416938400384149, guid: 9dab350ed84acf0429f9ec04a407af6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
