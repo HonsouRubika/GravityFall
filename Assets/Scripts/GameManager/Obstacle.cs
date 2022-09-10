@@ -18,8 +18,8 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Move();
+        if(!GameManager.Instance._isOnPause)
+            Move();
 
         //depop when out of camera
         if(_despawnLine != null && transform.position.x < _despawnLine.position.x)

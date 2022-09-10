@@ -1,58 +1,49 @@
 fileFormatVersion: 2
-guid: 3a68c23b1821a4848a64ec819d230aad
+guid: 16c091a14e8ccc24faaa2876060e75b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1304054697971004887
-    second: Anim_Flaque_Radioactive_0
+      213: 4737139122335186685
+    second: Anim_Transition_Flaque_Radioactive_2_0
   - first:
-      213: -5312042894201393181
-    second: Anim_Flaque_Radioactive_1
+      213: 7462897909992633534
+    second: Anim_Transition_Flaque_Radioactive_2_1
   - first:
-      213: -5769745769247454810
-    second: Anim_Flaque_Radioactive_2
+      213: -8314493236888439757
+    second: Anim_Transition_Flaque_Radioactive_2_2
   - first:
-      213: -3501251542691961741
-    second: Anim_Flaque_Radioactive_3
+      213: -9207645783036676987
+    second: Anim_Transition_Flaque_Radioactive_2_3
   - first:
-      213: 2433385003252080046
-    second: Anim_Flaque_Radioactive_4
+      213: -1354711358376592798
+    second: Anim_Transition_Flaque_Radioactive_2_4
   - first:
-      213: -1483848613041412599
-    second: Anim_Flaque_Radioactive_5
+      213: 2246764241975345719
+    second: Anim_Transition_Flaque_Radioactive_2_5
   - first:
-      213: -1369433716637435435
-    second: Anim_Flaque_Radioactive_6
+      213: 2534744705781706640
+    second: Anim_Transition_Flaque_Radioactive_2_6
   - first:
-      213: 123052375327264997
-    second: Anim_Flaque_Radioactive_7
+      213: -5490907471501899048
+    second: Anim_Transition_Flaque_Radioactive_2_7
   - first:
-      213: -9189675409172101033
-    second: Anim_Flaque_Radioactive_8
+      213: 4245306306135594194
+    second: Anim_Transition_Flaque_Radioactive_2_8
   - first:
-      213: 6669182420343074795
-    second: Anim_Flaque_Radioactive_9
+      213: 5352933414430241305
+    second: Anim_Transition_Flaque_Radioactive_2_9
   - first:
-      213: 178421367755627883
-    second: Anim_Flaque_Radioactive_10
+      213: 5622237600913593618
+    second: Anim_Transition_Flaque_Radioactive_2_10
   - first:
-      213: 8422079495584687323
-    second: Anim_Flaque_Radioactive_11
+      213: -7855307150463455162
+    second: Anim_Transition_Flaque_Radioactive_2_11
   - first:
-      213: -973794315191083483
-    second: Anim_Flaque_Radioactive_12
+      213: 4067665027390803522
+    second: Anim_Transition_Flaque_Radioactive_2_12
   - first:
-      213: -6945532400685561999
-    second: Anim_Flaque_Radioactive_13
-  - first:
-      213: -3557387076214312418
-    second: Anim_Flaque_Radioactive_14
-  - first:
-      213: 5270405254114771918
-    second: Anim_Flaque_Radioactive_15
-  - first:
-      213: -1316389806790791960
-    second: Anim_Flaque_Radioactive_16
+      213: 8582154126305493381
+    second: Anim_Transition_Flaque_Radioactive_2_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,7 +74,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -142,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_0
+      name: Anim_Transition_Flaque_Radioactive_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92a42cf492117ede0800000000000000
-      internalID: -1304054697971004887
+      spriteID: dfef46eeee2bdb140800000000000000
+      internalID: 4737139122335186685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_1
+      name: Anim_Transition_Flaque_Radioactive_2_1
       rect:
         serializedVersion: 2
-        x: 253
+        x: 196
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3efec73d125d746b0800000000000000
-      internalID: -5312042894201393181
+      spriteID: eb4bd18eb1a819760800000000000000
+      internalID: 7462897909992633534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_2
+      name: Anim_Transition_Flaque_Radioactive_2_2
       rect:
         serializedVersion: 2
-        x: 506
+        x: 392
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a941b3dacebdefa0800000000000000
-      internalID: -5769745769247454810
+      spriteID: 33470eff37cfc9c80800000000000000
+      internalID: -8314493236888439757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_3
+      name: Anim_Transition_Flaque_Radioactive_2_3
       rect:
         serializedVersion: 2
-        x: 759
+        x: 588
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 374ae88b54e096fc0800000000000000
-      internalID: -3501251542691961741
+      spriteID: 584b97cc1fed73080800000000000000
+      internalID: -9207645783036676987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_4
+      name: Anim_Transition_Flaque_Radioactive_2_4
       rect:
         serializedVersion: 2
-        x: 1012
+        x: 784
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead5a9094ce15c120800000000000000
-      internalID: 2433385003252080046
+      spriteID: 26ab6c67239133de0800000000000000
+      internalID: -1354711358376592798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_5
+      name: Anim_Transition_Flaque_Radioactive_2_5
       rect:
         serializedVersion: 2
-        x: 1265
+        x: 980
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906e5375c8f486be0800000000000000
-      internalID: -1483848613041412599
+      spriteID: 7328df89c2c1e2f10800000000000000
+      internalID: 2246764241975345719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_6
+      name: Anim_Transition_Flaque_Radioactive_2_6
       rect:
         serializedVersion: 2
-        x: 1518
+        x: 1176
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9f1605a4bcefce0800000000000000
-      internalID: -1369433716637435435
+      spriteID: 09fab6851e83d2320800000000000000
+      internalID: 2534744705781706640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_7
+      name: Anim_Transition_Flaque_Radioactive_2_7
       rect:
         serializedVersion: 2
-        x: 1771
+        x: 1372
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e05620cb7b25b100800000000000000
-      internalID: 123052375327264997
+      spriteID: 8da479a2fb06cc3b0800000000000000
+      internalID: -5490907471501899048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_8
+      name: Anim_Transition_Flaque_Radioactive_2_8
       rect:
         serializedVersion: 2
-        x: 2024
+        x: 1568
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 758872387e6b77080800000000000000
-      internalID: -9189675409172101033
+      spriteID: 2d410f3c79b5aea30800000000000000
+      internalID: 4245306306135594194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_9
+      name: Anim_Transition_Flaque_Radioactive_2_9
       rect:
         serializedVersion: 2
-        x: 2277
+        x: 1764
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bef24d29312bd8c50800000000000000
-      internalID: 6669182420343074795
+      spriteID: 912fe615490794a40800000000000000
+      internalID: 5352933414430241305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_10
+      name: Anim_Transition_Flaque_Radioactive_2_10
       rect:
         serializedVersion: 2
-        x: 2530
+        x: 1960
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,20 +357,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dd965e941e97200800000000000000
-      internalID: 178421367755627883
+      spriteID: 2159c456f43360e40800000000000000
+      internalID: 5622237600913593618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_11
+      name: Anim_Transition_Flaque_Radioactive_2_11
       rect:
         serializedVersion: 2
-        x: 2783
+        x: 2156
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,20 +378,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd42d6cddac31e470800000000000000
-      internalID: 8422079495584687323
+      spriteID: 6403a0f04c75cf290800000000000000
+      internalID: -7855307150463455162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_12
+      name: Anim_Transition_Flaque_Radioactive_2_12
       rect:
         serializedVersion: 2
-        x: 3036
+        x: 2352
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,20 +399,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52e9dbeca336c72f0800000000000000
-      internalID: -973794315191083483
+      spriteID: 24e88ee7acf337830800000000000000
+      internalID: 4067665027390803522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_13
+      name: Anim_Transition_Flaque_Radioactive_2_13
       rect:
         serializedVersion: 2
-        x: 3289
+        x: 2548
         y: 0
-        width: 253
-        height: 153
+        width: 196
+        height: 304
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -429,71 +420,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 177cb21a4138c9f90800000000000000
-      internalID: -6945532400685561999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_14
-      rect:
-        serializedVersion: 2
-        x: 3542
-        y: 0
-        width: 253
-        height: 153
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e123ea15d4f91aec0800000000000000
-      internalID: -3557387076214312418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_15
-      rect:
-        serializedVersion: 2
-        x: 3795
-        y: 0
-        width: 253
-        height: 153
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec30dd1a7ad342940800000000000000
-      internalID: 5270405254114771918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Flaque_Radioactive_16
-      rect:
-        serializedVersion: 2
-        x: 4048
-        y: 0
-        width: 253
-        height: 153
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ec2a4cf17e3bbde0800000000000000
-      internalID: -1316389806790791960
+      spriteID: 581871a25bfe91770800000000000000
+      internalID: 8582154126305493381
       vertices: []
       indices: 
       edges: []
