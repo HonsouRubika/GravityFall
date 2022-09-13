@@ -405,7 +405,7 @@ public class GameManager : MonoBehaviour
                             break;
                         case 3:
                             //helix
-                            GameObject obst3 = Instantiate(_obstaclesPrefabs[2], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), _obstaclesPrefabs[2].transform.rotation);
+                            GameObject obst3 = Instantiate(_obstaclesPrefabs[2], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, 0.7953615f, 0), _obstaclesPrefabs[2].transform.rotation);
                             obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
                         case 4:
@@ -447,7 +447,7 @@ public class GameManager : MonoBehaviour
                             break;
                         case 3:
                             //eye
-                            GameObject obst3 = Instantiate(_obstaclesPrefabs[7], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), _obstaclesPrefabs[7].transform.rotation);
+                            GameObject obst3 = Instantiate(_obstaclesPrefabs[7], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -6.954816f, 0), _obstaclesPrefabs[7].transform.rotation);
                             obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
                         case 4:
