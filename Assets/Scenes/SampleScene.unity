@@ -853,6 +853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotBackground4
       objectReference: {fileID: 0}
+    - target: {fileID: 4726049194261673554, guid: 888b9a769efacc0429b99369dab4f90c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5784553332445713465, guid: 888b9a769efacc0429b99369dab4f90c, type: 3}
       propertyPath: _spawnLine
       value: 
