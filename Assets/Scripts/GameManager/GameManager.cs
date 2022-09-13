@@ -322,35 +322,38 @@ public class GameManager : MonoBehaviour
 
     public void CreatePatterns()
     {
-        //pattern example
-        //see explanation in "Pattern" script
         /*
+         * -Flaque verte1	= Flaque rouge
+         * -flaque verte2   = bouche
+         * -Hélice 	        = Oeil
+         * -Barbelé	        = Main
+         * -Fils cassé	    = Os
+         */
+        
         Pattern example = new Pattern(10, 5);
-
-        example.AddObstacle(2, 1, Pattern.ObstaclesType.babredWires);
-        example.AddObstacle(3, 2, Pattern.ObstaclesType.babredWires);
-        example.AddObstacle(6, 2, Pattern.ObstaclesType.babredWires);
-        example.AddObstacle(7, 3, Pattern.ObstaclesType.babredWires);
+        example.AddObstacle(0, 0, Pattern.ObstaclesType.barbedWires);
+        example.AddObstacle(3, 0, Pattern.ObstaclesType.green_pool);
+        example.AddObstacle(6, 0, Pattern.ObstaclesType.helix);
         _patterns.Add(example);
 
 
-        //write your other pattern here
-        //...
         Pattern pat1 = new Pattern(10, 5);
-        pat1.AddObstacle(1, 0, Pattern.ObstaclesType.elecCables);
-        pat1.AddObstacle(7, 3, Pattern.ObstaclesType.elecCables);
-        pat1.AddObstacle(4, 1, Pattern.ObstaclesType.elecCables);
+        pat1.AddObstacle(0, 0, Pattern.ObstaclesType.barbedWires);
+        pat1.AddObstacle(9, 3, Pattern.ObstaclesType.barbedWires);
+        pat1.AddObstacle(4, 1, Pattern.ObstaclesType.green_pool2);
+        pat1.AddObstacle(9, 1, Pattern.ObstaclesType.helix);
         _patterns.Add(pat1);
 
 
         Pattern pat2 = new Pattern(10, 5);
-        pat2.AddObstacle(2, 0, Pattern.ObstaclesType.elecCables);
-        pat2.AddObstacle(3, 0, Pattern.ObstaclesType.elecCables);
-        pat2.AddObstacle(6, 1, Pattern.ObstaclesType.elecCables);
-        pat2.AddObstacle(4, 3, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(0, 0, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(4, 0, Pattern.ObstaclesType.elecCables);
+        pat2.AddObstacle(2, 1, Pattern.ObstaclesType.barbedWires);
+        pat2.AddObstacle(6, 3, Pattern.ObstaclesType.barbedWires);
         _patterns.Add(pat2);
-        */
+        
 
+        /*
         Pattern p1 = new Pattern(10, 5);
         p1.AddObstacle(3, 3, Pattern.ObstaclesType.elecCables);
         p1.AddObstacle(4, 3, Pattern.ObstaclesType.elecCables);
@@ -373,6 +376,7 @@ public class GameManager : MonoBehaviour
         p4.AddObstacle(6, 3, Pattern.ObstaclesType.elecCables);
         p4.AddObstacle(1, 3, Pattern.ObstaclesType.elecCables);
         _patterns.Add(p4);
+        */
 
         //p3.AddObstacle(3, 0)
 
@@ -380,8 +384,6 @@ public class GameManager : MonoBehaviour
 
     public void InstantiatePattern(Pattern p1, Pattern p2)
     {
-        //same pattern for p1 and p2
-
         //for p1
         for (int i = 0; i < p1._length; i++)
         {
@@ -392,14 +394,29 @@ public class GameManager : MonoBehaviour
                     switch (p1._obstacles[i, j])
                     {
                         case 1:
-                            GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            //electric wires
+                            GameObject obst = Instantiate(_obstaclesPrefabs[0], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -1.47f, 0), _obstaclesPrefabs[0].transform.rotation);
                             obst.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
-
-                        //add other objects type here
                         case 2:
-                            GameObject obst2 = Instantiate(_obstaclesPrefabs[1], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            //barbed wire
+                            GameObject obst2 = Instantiate(_obstaclesPrefabs[1], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, 3.832806f, 0), _obstaclesPrefabs[1].transform.rotation);
                             obst2.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 3:
+                            //helix
+                            GameObject obst3 = Instantiate(_obstaclesPrefabs[2], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), _obstaclesPrefabs[2].transform.rotation);
+                            obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 4:
+                            //green pool
+                            GameObject obst4 = Instantiate(_obstaclesPrefabs[3], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -2.21f, 0), _obstaclesPrefabs[3].transform.rotation);
+                            obst4.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 5:
+                            //green pool 2
+                            GameObject obst5 = Instantiate(_obstaclesPrefabs[4], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -2.21f, 0), _obstaclesPrefabs[4].transform.rotation);
+                            obst5.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
                     }
@@ -418,13 +435,30 @@ public class GameManager : MonoBehaviour
                     {
 
                         case 1:
-                            GameObject obst3 = Instantiate(_obstaclesPrefabs[2], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
-                            obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            //hand
+                            GameObject obst1 = Instantiate(_obstaclesPrefabs[5], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, -3.73f, 0), _obstaclesPrefabs[5].transform.rotation);
+                            obst1.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
 
                         case 2:
-                            GameObject obst4 = Instantiate(_obstaclesPrefabs[3], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, _patternTwoSpawn.position.y + j * _spaceBetweenObstacles, 0), Quaternion.identity);
+                            //bones
+                            GameObject obst2 = Instantiate(_obstaclesPrefabs[6], new Vector3(_patternTwoSpawn.position.x + i * _spaceBetweenObstacles, -8.55f, 0), _obstaclesPrefabs[6].transform.rotation);
+                            obst2.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 3:
+                            //eye
+                            GameObject obst3 = Instantiate(_obstaclesPrefabs[7], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, _patternOneSpawn.position.y + j * _spaceBetweenObstacles, 0), _obstaclesPrefabs[7].transform.rotation);
+                            obst3.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 4:
+                            //red pool
+                            GameObject obst4 = Instantiate(_obstaclesPrefabs[8], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -9.427381f, 0), _obstaclesPrefabs[8].transform.rotation);
                             obst4.GetComponent<Obstacle>()._despawnLine = _despawnLine;
+                            break;
+                        case 5:
+                            //mouse
+                            GameObject obst5 = Instantiate(_obstaclesPrefabs[9], new Vector3(_patternOneSpawn.position.x + i * _spaceBetweenObstacles, -9.47f, 0), _obstaclesPrefabs[9].transform.rotation);
+                            obst5.GetComponent<Obstacle>()._despawnLine = _despawnLine;
                             break;
                     }
                 }

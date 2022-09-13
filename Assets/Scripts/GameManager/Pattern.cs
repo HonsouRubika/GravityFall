@@ -10,10 +10,16 @@ public class Pattern
     public enum ObstaclesType
     {
         empty,
-        elecCables,
-        babredWires,
-        hand,
-        bones,
+        elecCables, //top
+        barbedWires,//top
+        helix,      //top
+        green_pool, //top
+        green_pool2, //top
+        hand,       //bot
+        bones,      //bot
+        red_pool,   //bot
+        eye,        //bot
+        mouse,      //bot
         total
     }
 

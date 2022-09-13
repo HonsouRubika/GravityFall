@@ -232,8 +232,6 @@ public class PlayerController : MonoBehaviour
                 RaycastHit2D obstacle = Physics2D.Linecast(new Vector2(_leftEdgeP1.transform.position.x, startPosition2 + (i * (colliderWidth / _nbOfRay))), new Vector2(_leftEdgeP1.transform.position.x + _hitboxRayLength, startPosition2 + (i * (colliderWidth / _nbOfRay))), 1 << LayerMask.NameToLayer("Obstacle"));
                 if (obstacle)
                 {
-                    //collided to obstacle
-                    Debug.Log("pls");
                     //Obstacles depop
                     Destroy(obstacle.collider.gameObject);
 
@@ -285,9 +283,7 @@ public class PlayerController : MonoBehaviour
             {
                 RaycastHit2D obstacle = Physics2D.Linecast(new Vector2(_leftEdgeP1.transform.position.x, startPosition2 + (i * (colliderWidth / _nbOfRay))), new Vector2(_leftEdgeP1.transform.position.x + _hitboxRayLength, startPosition2 + (i * (colliderWidth / _nbOfRay))), 1 << LayerMask.NameToLayer("Obstacle"));
                 if (obstacle)
-                {
-                    //collided to obstacle
-                    Debug.Log("touched obstacle");
+                {   
 
                     //TODO : Obstacles must depop
                     Destroy(obstacle.collider.gameObject);
@@ -342,9 +338,6 @@ public class PlayerController : MonoBehaviour
                 RaycastHit2D obstacle = Physics2D.Linecast(new Vector2(_leftEdgeP2.transform.position.x, startPosition2 + (i * (colliderWidth / _nbOfRay))), new Vector2(_leftEdgeP2.transform.position.x + _hitboxRayLength, startPosition2 + (i * (colliderWidth / _nbOfRay))), 1 << LayerMask.NameToLayer("Obstacle"));
                 if (obstacle)
                 {
-                    //collided to obstacle
-                    Debug.Log("touched obstacle");
-
                     //TODO : Obstacles must depop
                     Destroy(obstacle.collider.gameObject);
 
@@ -410,7 +403,6 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerGotHit()
     {
-        Debug.Log("player got hit");
 
         if (Time.time >= _timeInvulnerabilityBegin + _invulnerabilityDuration)
         {
@@ -422,6 +414,9 @@ public class PlayerController : MonoBehaviour
 
             //slow obstacles
             GameManager.Instance._lastTimePlayerGotHit = Time.time;
+
+            //update ui
+            HPManager.Instance.LooseHp();
         }
     }
 

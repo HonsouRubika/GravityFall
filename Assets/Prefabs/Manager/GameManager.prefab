@@ -112,7 +112,7 @@ MonoBehaviour:
   _playerOneSpawn: {fileID: 4937248486512512700}
   _playerTwoSpawn: {fileID: 8271114517614571490}
   obstacleSpawnRate: 2
-  _spaceBetweenObstacles: 1
+  _spaceBetweenObstacles: 2
   _patternOneSpawn: {fileID: 6008726885008196636}
   _patternTwoSpawn: {fileID: 484806921854878844}
   _obstaclesPrefabs:
@@ -130,6 +130,9 @@ MonoBehaviour:
   _obstacleSlowSpeed: 2
   _speedComeBackRate: 10
   _timeBeforeNormalObstacleSpeed: 2
+  _pause: {fileID: 0}
+  _inGame: {fileID: 0}
+  _gameOver: {fileID: 0}
   _background1Prefab: {fileID: 3821240643677432849, guid: 8028a040da5663141ad2d404e038020d, type: 3}
   _backgrounds1:
   - {fileID: 0}
